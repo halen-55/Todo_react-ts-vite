@@ -12,20 +12,13 @@ function App() {
   ]);
 
 
-  const [title, setTitle] = useState<string>('')
-  const [body, setBody] = useState<string>('')
- 
+  const [task, setTask] = useState<ITask>({title: '', body: ''})
+
   const addNewTask = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault()
-    const newTask = {
-      id: Date.now(),
-      title,
-      body
-    }
-    console.log(newTask)
-    setTasks([...tasks, newTask])
-    setTitle('')
-    setBody('')
+    setTasks([...tasks, {...task, id: Date.now()}])
+    setTask({title: '', body: ''})
+
   }
 
   return (
@@ -34,14 +27,14 @@ function App() {
       {/* FORM */}
       <form>
         <Input
-            onChange={e => setTitle(e.currentTarget.value)}
-            value={title}
+            onChange={e => setTask({...task, title: e.currentTarget.value})}
+            value={task.title}
             type='text'
             placeholder="Task title"
         />
         <Input
-            onChange={e => setBody(e.currentTarget.value)}
-            value={body}
+            onChange={e => setTask({...task, body: e.currentTarget.value})}
+            value={task.body}
             type='text'
             placeholder="Task body"
         />
