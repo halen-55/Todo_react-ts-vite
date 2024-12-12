@@ -1,0 +1,18 @@
+.task {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #4B9AC8;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &__content {
+        padding: 5px 10px;
+        color: white;
+        cursor: default;
+    }
+
+}

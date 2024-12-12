@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  // background-color: #242424;
+  background: linear-gradient(to right, #000428, #004e92);
+  // background: linear-gradient(to right, #0C1367, #787FCF);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.borderBottom {
+  border-bottom: 2px solid #4B9AC8;
+  opacity: 95%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
