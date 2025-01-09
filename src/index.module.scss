@@ -15,26 +15,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.title {
+  margin: 0 auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-}
-
-
-.borderBottom {
-  border-bottom: 2px solid #4B9AC8;
-  opacity: 95%;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  align-items: center;
   gap: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
-

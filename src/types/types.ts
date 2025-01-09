@@ -8,3 +8,13 @@ export interface ITask {
     body: string;
 }
 
+export interface IOption {
+    value: string;
+    name: string;
+}
+
+export interface IFilter {
+    sort: string;
+    query: string;
+}
+

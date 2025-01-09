@@ -4,9 +4,9 @@ import styles from "./Input.module.scss";
 
 
 type InputProps = {
-  // onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   // onChange?: () => void;
-  onChange: (event: React.FormEvent<HTMLInputElement>) => void;
+  // onChange: (event: React.FormEvent<HTMLInputElement>) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
   type: string;
   placeholder: string;

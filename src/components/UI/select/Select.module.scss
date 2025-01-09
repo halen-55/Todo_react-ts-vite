@@ -1,0 +1,19 @@
+.select {
+    // убрать стрелку по умолчанию
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; 
+
+    // убрать браузерную обводку
+    outline: none;
+
+    max-width: 200px;
+    padding: 5px 10px;
+    color: #083E5F;
+    cursor: default;
+    border: 2px solid #4B9AC8;
+    padding: 10px 35px 10px 15px;
+    border-radius: 5px;
+}
+
+
