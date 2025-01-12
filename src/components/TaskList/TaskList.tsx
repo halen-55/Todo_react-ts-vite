@@ -12,7 +12,7 @@ const TaskList: FC<TaskListProps> = ({ tasks, remove }) => {
 
   if (!tasks.length) {
     return (
-      <h2 className={styles.title}> Посты не найдены </h2>
+      <h2 className={styles.title}> The task list is empty </h2>
     ) 
   }
 
